@@ -30,7 +30,10 @@
       "implicitDependencies": ["product"]
     },
     "shared-product-list": {
-      "tags": ["shared","feature"]
+      "tags": ["shared", "feature"]
+    },
+    "shared-add-product": {
+      "tags": ["shared", "feature"]
     }
   }
 }

@@ -16,7 +16,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@products/shared/product-list": ["libs/shared/product-list/src/index.ts"]
+      "@products/shared/product-list": [
+        "libs/shared/product-list/src/index.ts"
+      ],
+      "@products/shared/add-product": ["libs/shared/add-product/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

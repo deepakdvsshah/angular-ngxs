@@ -155,6 +155,38 @@
           "style": "scss"
         }
       }
+    },
+    "shared-add-product": {
+      "projectType": "library",
+      "root": "libs/shared/add-product",
+      "sourceRoot": "libs/shared/add-product/src",
+      "prefix": "products",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/add-product/tsconfig.lib.json",
+              "libs/shared/add-product/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/add-product/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/add-product/jest.config.js",
+            "tsConfig": "libs/shared/add-product/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/add-product/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
