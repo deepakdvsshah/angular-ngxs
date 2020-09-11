@@ -1,0 +1,110 @@
+.cart-svg {
+    background-color: #ffec5f;
+    border-radius: 15% 15% 15% 15%;
+    width: 100px;
+    height: 100px;
+    padding: 19px;
+    margin-top: 24px;
+  }
+  .font {
+    color: #224257;
+    font-weight: 600;
+  
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+  .div1 {
+    width: 120px;
+    float: left;
+    border: 1px solid #ececec;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .div2 {
+    width: 120px;
+    float: left;
+    border: 1px solid #ececec;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  span {
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+  .table-responsive-lg {
+    margin-top: 50px;
+  
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  
+    .table-section {
+      width: 92%;
+      margin-bottom: 1rem;
+      color: #212529;
+      margin: 20px auto;
+      background: #fff;
+  
+      @media only screen and (max-width: 600px) {
+        width: 600px;
+        overflow: auto;
+      }
+  
+      thead {
+        tr {
+          th {
+            color: #212529;
+            padding: 15px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 600;
+          }
+        }
+      }
+  
+      tbody {
+        tr {
+          td,
+          th {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+  .white {
+    background-color: white;
+    padding: 20px;
+  
+    @media only screen and (max-width: 600px) {
+      padding: 0px 20px 20px 20px;
+  
+      .cart-svg {
+        margin: 0 auto;
+      }
+    }
+  }
+  .table-btn > * {
+    margin: 0.25rem !important;
+    float: right;
+  }
+  .pd {
+    padding: 0 2%;
+  }
+  .pd25 {
+    padding: 25px;
+  }
+  
+  .production-summary {
+    @media only screen and (max-width: 600px){
+      position: relative;
+      left: calc(50% - 163px);
+    }
+  }

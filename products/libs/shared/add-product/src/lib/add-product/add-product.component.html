@@ -1,0 +1,181 @@
+<div *ngIf="errorObj |async" class="alert alert-danger" role="alert">
+    {{errorObj|async}}
+  </div>
+  <div *ngIf="successObj |async" class="alert alert-success" role="alert">
+    {{successObj|async}}
+  </div>
+  <div class="container white">
+    <div class="row">
+      <div class="col-sm-1">
+        <div class="cart-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="80"
+            height="80"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            id="Capa_1"
+            x="0px"
+            y="0px"
+            viewBox="0 0 290.99 290.99"
+            style="enable-background: new 0 0 290.99 290.99;"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                style="fill: #010002;"
+                d="M280.112,30.82H10.878C4.868,30.82,0,35.694,0,41.699v207.593c0,6.005,4.868,10.878,10.878,10.878 h269.234c6.005,0,10.878-4.873,10.878-10.878V41.699C290.99,35.694,286.117,30.82,280.112,30.82z M266.52,219.828 c0,6.005-4.873,10.878-10.878,10.878H58.018c-6.01,0-10.878-4.873-10.878-10.878V71.162c0-6.005,4.868-10.878,10.878-10.878 h197.623c6.005,0,10.878,4.873,10.878,10.878V219.828z"
+              />
+              <path
+                style="fill: #010002;"
+                d="M73.427,216.434h164.08c6.005,0,9.616-4.699,8.044-10.508l-26.069-96.837 c-1.566-5.803-4.15-9.388-5.776-8.012s-4.569,7.082-6.57,12.749l-21.299,60.183c-2.002,5.668-6.451,6.288-9.932,1.392 l-18.667-26.254c-3.486-4.895-9.23-4.971-12.842-0.169l-20.01,26.597c-3.612,4.803-10.155,5.434-14.62,1.414l-6.494-5.852 c-4.465-4.019-10.655-3.144-13.821,1.958l-21.163,34.098C65.122,212.295,67.417,216.434,73.427,216.434z"
+              />
+              <circle
+                style="fill: #010002;"
+                cx="114.215"
+                cy="117.622"
+                r="15.409"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 class="font">New Product</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h6 class="font price">${{ addProduct.value['price'] }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-section">
+    <form [formGroup]="addProduct" (ngSubmit)="onSubmit()" autocomplete="off">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Product Name</label>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Product Name</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="title"
+              id="product-name-input"
+            />
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Description</label>
+            <textarea
+              type="text"
+              class="form-control"
+              formControlName="description"
+              id="description-input"
+              rows="7"
+            ></textarea>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Product Price</label>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Product Price</label>
+            <div class="input-icon">
+              <input
+                type="number" min="0"
+                class="form-control"
+                formControlName="price"
+                id="product-price-input"
+              />
+              <i>$</i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formGroupExampleInput2">Discount Price(optional)</label>
+            <div class="input-icon">
+              <input
+                type="number" min="0"
+                class="form-control"
+                formControlName="price_offer"
+                id="discount-price-input"
+              />
+              <i>$</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" *ngIf="this.uuid === 'add'">
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Stock</label>
+            <input
+              type="number" min="0"
+              class="form-control"
+              formControlName="stock"
+              id="stock-input"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Sku</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="sku"
+              id="product-code-input"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="form-group">
+            <label for="formGroupExampleInput">Delivery Cost</label>
+            <input
+              type="number" min="0"
+              class="form-control"
+              formControlName="delivery_cost"
+              id="delivery-cost-input"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6 btn text-right">
+          <button
+            type="submit"
+            *ngIf="this.uuid === 'add'"
+            class="btn btn-primary btn-lg"
+            id="add-product-button"
+            [disabled]="addProduct.invalid"
+          >
+            Add Product
+          </button>
+          <button
+            type="submit"
+            *ngIf="this.uuid !== 'add'"
+            class="btn btn-primary btn-lg"
+            id="update-product-button"
+            [disabled]="addProduct.invalid"
+          >
+            Update Product
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg"
+            id="cancel-button"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
