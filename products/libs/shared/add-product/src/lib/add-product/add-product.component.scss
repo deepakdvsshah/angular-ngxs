@@ -1,0 +1,93 @@
+.form-section {
+    width: 80%;
+    margin: 0 auto;
+  
+    @media only screen and (max-width: 600px) {
+      width: 92%;
+    }
+  }
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-5,
+  .col-lg-4,
+  .col-lg-3 {
+    margin: 20px 0 10px 0;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #f2f2f2;
+    margin-left: -1px;
+  
+    @media only screen and (max-width: 600px) {
+      padding: 25px 20px;
+    }
+  }
+  .col-lg-6.btn.text-right {
+    @media only screen and (max-width: 600px) {
+      text-align: center !important;
+    }
+  }
+  
+  .input-icon {
+    position: relative;
+  }
+  
+  input {
+    &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+  
+  .input-icon > i {
+    height: 100%;
+    background-color: #f0f0f0;
+    padding: 2%;
+    position: absolute;
+    display: block;
+    transform: translate(0, -50%);
+    top: 50%;
+    pointer-events: none;
+    width: 12%;
+    text-align: center;
+    font-style: normal;
+  }
+  
+  .input-icon > input {
+    padding-left: 13%;
+    padding-right: 0;
+  }
+  
+  .input-icon-right > i {
+    right: 0;
+  }
+  
+  .input-icon-right > input {
+    padding-left: 0;
+    padding-right: 25px;
+    text-align: right;
+  }
+  .white {
+    background-color: white;
+    padding: 20px 40px;
+  
+    @media only screen and (max-width: 600px) {
+      padding: 0px 40px 20px 40px;
+      text-align: center;
+    }
+  }
+  .pd {
+    padding: 0 0 0 5%;
+  }
+  .btn > * {
+    margin: 0.25rem !important;
+  }
+  
+  .font {
+    font-size: 26px;
+    font-weight: 500;
+  
+    &.price {
+      font-size: 20px;
+    }
+  }
+  

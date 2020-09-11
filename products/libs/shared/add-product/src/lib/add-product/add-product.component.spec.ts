@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { AddProductState } from '../+state/add-product.state';
 import { AddProductComponent } from './add-product.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxsModule } from '@ngxs/store';
 
 describe('AddProductComponent', () => {
   let component: AddProductComponent;
@@ -8,9 +10,10 @@ describe('AddProductComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddProductComponent ]
+      imports: [FormsModule, ReactiveFormsModule, NgxsModule.forRoot([AddProductState])],
+      declarations: [AddProductComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
