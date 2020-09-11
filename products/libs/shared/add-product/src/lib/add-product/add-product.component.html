@@ -89,7 +89,7 @@
             <label for="formGroupExampleInput2">Product Price</label>
             <div class="input-icon">
               <input
-                type="number"
+                type="number" min="0"
                 class="form-control"
                 formControlName="price"
                 id="product-price-input"
@@ -101,7 +101,7 @@
             <label for="formGroupExampleInput2">Discount Price(optional)</label>
             <div class="input-icon">
               <input
-                type="number"
+                type="number" min="0"
                 class="form-control"
                 formControlName="price_offer"
                 id="discount-price-input"
@@ -111,12 +111,12 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" *ngIf="this.uuid === 'add'">
         <div class="col-lg-4">
           <div class="form-group">
             <label for="formGroupExampleInput">Stock</label>
             <input
-              type="number"
+              type="number" min="0"
               class="form-control"
               formControlName="stock"
               id="stock-input"
@@ -138,7 +138,7 @@
           <div class="form-group">
             <label for="formGroupExampleInput">Delivery Cost</label>
             <input
-              type="number"
+              type="number" min="0"
               class="form-control"
               formControlName="delivery_cost"
               id="delivery-cost-input"
