@@ -48,8 +48,8 @@ click of add product we can jump into add/edit product screen.
 
 ## Dependency
 
-App contains two feature which mentioned at below links:
+App contains two feature which mentioned at below links: 
 
-[Product list](../../libs/shared/list/documentation/product-list-technical.md)
+[Product list](../../../libs/shared/product-list/documentation/product-list-technical.md)
 
-[Add Product](../../libs/shared/add-product/documentation/add-product-technical.md)
+[Add Product](../../../libs/shared/add-product/documentation/add-product-technical.md)

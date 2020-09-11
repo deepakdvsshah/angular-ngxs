@@ -62,6 +62,6 @@ The below layout shows the haeder of application.
 
 App contains two feature which mentioned at below links:
 
-[Product list](../../libs/shared/list/documentation/product-list-module-design.md)
+[Product list](../../../libs/shared/product-list/documentation/product-list-module-design.md)
 
-[Add Product](../../libs/shared/add-product/documentation/add-product-module-design.md)
+[Add Product](../../../libs/shared/add-product/documentation/add-product-module-design.md)
