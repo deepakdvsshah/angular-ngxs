@@ -1,0 +1,863 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>products documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">products documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProductListViewComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>products-product-list-view</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./product-list-view.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./product-list-view.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#errorObj">errorObj</a>
+                            </li>
+                            <li>
+                                <a href="#outOfStockCount">outOfStockCount</a>
+                            </li>
+                            <li>
+                                <a href="#productList">productList</a>
+                            </li>
+                            <li>
+                                <a href="#successObj">successObj</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, store: Store)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="action"></a>
+                    <span class="name">
+                        <b>
+                            action
+                        </b>
+                        <a href="#action"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>action(id, action)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errorObj"></a>
+                        <span class="name">
+                            <b>
+                            errorObj</b>
+                            <a href="#errorObj"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;Product[]&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Select(ProductListState.getErrorObj)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="outOfStockCount"></a>
+                        <span class="name">
+                            <b>
+                            outOfStockCount</b>
+                            <a href="#outOfStockCount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="productList"></a>
+                        <span class="name">
+                            <b>
+                            productList</b>
+                            <a href="#productList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;Product[]&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Select(ProductListState.getProductList)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="successObj"></a>
+                        <span class="name">
+                            <b>
+                            successObj</b>
+                            <a href="#successObj"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Observable&lt;Product[]&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Select(ProductListState.getSuccessObj)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">libs/shared/product-list/src/lib/product-list-view/product-list-view.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { GetProducts, DeleteProduct } from &#x27;../+state/product-list-view.action&#x27;;
+import { Select, Store } from &#x27;@ngxs/store&#x27;;
+import { ProductListState } from &#x27;../+state/product-list-view.state&#x27;;
+import { Product } from &#x27;../model/product-list&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+
+@Component({
+  selector: &#x27;products-product-list-view&#x27;,
+  templateUrl: &#x27;./product-list-view.component.html&#x27;,
+  styleUrls: [&#x27;./product-list-view.component.scss&#x27;]
+})
+export class ProductListViewComponent implements OnInit {
+  outOfStockCount:number;
+  @Select(ProductListState.getProductList) productList: Observable&lt;Product[]&gt;;
+  @Select(ProductListState.getErrorObj) errorObj: Observable&lt;Product[]&gt;;
+  @Select(ProductListState.getSuccessObj) successObj: Observable&lt;Product[]&gt;;
+  constructor(private router: Router, private store: Store) {
+    this.store.dispatch(new GetProducts()).subscribe(() &#x3D;&gt; {
+    const productList &#x3D; this.store.selectSnapshot(ProductListState.getProductList);
+    this.outOfStockCount &#x3D; (productList.filter((a:Product) &#x3D;&gt; a.stock &lt;&#x3D;0)).length;
+    });
+  }
+
+  ngOnInit() {
+  }
+
+  action(id, action) {
+    action &#x3D;&#x3D;&#x3D; &#x27;delete&#x27; ? this.store.dispatch(new DeleteProduct(id)) : this.router.navigate([&#x27;addProduct/&#x27; + id]);
+  }
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;errorObj |async&quot; class&#x3D;&quot;alert alert-danger&quot; role&#x3D;&quot;alert&quot;&gt;
+    {{errorObj|async}}
+  &lt;/div&gt;
+  &lt;div *ngIf&#x3D;&quot;successObj |async&quot; class&#x3D;&quot;alert alert-success&quot; role&#x3D;&quot;alert&quot;&gt;
+    {{successObj|async}}
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;container white&quot;&gt;
+    &lt;div class&#x3D;&quot;row pd&quot;&gt;
+      &lt;div class&#x3D;&quot;col-sm-2&quot;&gt;
+        &lt;div class&#x3D;&quot;cart-svg&quot;&gt; &lt;svg xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot;
+            version&#x3D;&quot;1.1&quot; viewBox&#x3D;&quot;0 0 512 512&quot; enable-background&#x3D;&quot;new 0 0 512 512&quot; width&#x3D;&quot;50px&quot; height&#x3D;&quot;62px&quot;&gt;
+            &lt;g&gt;
+              &lt;g&gt;
+                &lt;polygon
+                  points&#x3D;&quot;408.5,63.9 387.7,63.9 387.7,95 356.6,95 356.6,115.8 387.7,115.8 387.7,147 408.5,147 408.5,115.8 439.7,115.8     439.7,95 408.5,95   &quot; /&gt;
+                &lt;path
+                  d&#x3D;&quot;M111,40.2c-1-5.2-5.2-8.3-10.4-8.3H16v20.9h76.2L161,331.1c1,5.2,5.2,8.3,10.4,8.3h268.2v-20.9H178.8L111,40.2z&quot; /&gt;
+                &lt;rect width&#x3D;&quot;237.9&quot; x&#x3D;&quot;171.5&quot; y&#x3D;&quot;371.7&quot; height&#x3D;&quot;20.9&quot; /&gt;
+                &lt;path
+                  d&#x3D;&quot;m396.9,419.7c-21.9,0-40.7,18.8-40.7,40.7s17.7,40.7 40.7,40.7c23,0 40.7-18.8 40.7-40.7s-18.8-40.7-40.7-40.7zm0,60.4c-10.4,0-19.8-9.4-19.8-19.8 0-10.4 8.3-19.8 19.8-19.8s19.8,9.4 19.8,19.8c0,10.5-9.4,19.8-19.8,19.8z&quot; /&gt;
+                &lt;path
+                  d&#x3D;&quot;m198.6,419.7c-21.9,0-40.7,18.8-40.7,40.7s17.7,40.7 40.7,40.7c21.9,0 40.7-18.8 40.7-40.7s-18.8-40.7-40.7-40.7zm0,60.4c-10.4,0-19.8-9.4-19.8-19.8 0-10.4 8.3-19.8 19.8-19.8 10.4,0 19.8,9.4 19.8,19.8 0,10.5-9.4,19.8-19.8,19.8z&quot; /&gt;
+                &lt;path
+                  d&#x3D;&quot;m496,104.8c0-52.1-41.7-93.8-93.9-93.8-52.2,0-93.9,41.7-93.9,93.8 0,0.7 0,1.4 0,2.1h-140.9c-10,0-11.7,9.1-10.4,13.6l44.9,158.5c1.1,4.3 6.3,7.3 10.4,7.3h227.5c5.2,0 9.4-3.1 11.5-8.3 0,0 41.8-148.9 42.5-151.9 0,0 0,0 0,0 1.5-6.9 2.3-14 2.3-21.3zm-315.1,23h130.1c2.9,11.8 8.1,22.8 15,32.3h-136.8l-8.3-32.3zm250.4,137.6h-211.8l-8.3-32.3h229.6l-9.5,32.3zm15.7-53.2h-242l-9-31.3h150.9c15.5,11.2 34.5,17.7 55.2,17.7 20,0 38.4-6.1 53.5-16.6l-8.6,30.2zm-44.9-34.4c-40.7,0-73-32.3-73-73 0-40.7 32.3-73 73-73 40.7,0 73,32.3 73,73 0,40.7-32.3,73-73,73z&quot; /&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+          &lt;/svg&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;col-sm-7 pd25&quot;&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+            &lt;h3 class&#x3D;&quot;font&quot;&gt; Product Center&lt;/h3&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+          &lt;div class&#x3D;&quot;col-sm-8 production-summary&quot;&gt;
+            &lt;span class&#x3D;&quot;div1&quot;&gt;
+              &lt;div class&#x3D;&quot;font&quot;&gt;{{(productList |async).length}}&lt;/div&gt;
+              &lt;div class&#x3D;&quot;font&quot;&gt;Products&lt;/div&gt;
+            &lt;/span&gt;
+            &lt;span class&#x3D;&quot;div2&quot;&gt;
+              &lt;div class&#x3D;&quot;font&quot;&gt;{{outOfStockCount}}&lt;/div&gt;
+              &lt;div class&#x3D;&quot;font&quot;&gt;Out of stock&lt;/div&gt;
+            &lt;/span&gt;
+  
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;table-responsive-lg&quot;&gt;
+      &lt;div *ngIf&#x3D;&quot;(productList |async).length&#x3D;&#x3D;0&quot; class&#x3D;&quot;alert alert-danger&quot; role&#x3D;&quot;alert&quot;&gt;
+       There is no products available.
+      &lt;/div&gt;
+    &lt;table *ngIf&#x3D;&quot;(productList |async).length&gt;0&quot; class&#x3D;&quot;table-section&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th scope&#x3D;&quot;col&quot;&gt;Product&lt;/th&gt;
+          &lt;th scope&#x3D;&quot;col&quot;&gt;Price&lt;/th&gt;
+          &lt;th scope&#x3D;&quot;col&quot;&gt;&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr *ngFor&#x3D;&quot;let item of  (productList |async)&quot;&gt;
+          &lt;th&gt;
+            &lt;div&gt;&lt;span&gt;{{ item. title}}&lt;/span&gt;&lt;/div&gt;
+            &lt;div&gt;&lt;span&gt;{{ item. description}}&lt;/span&gt;&lt;/div&gt;
+          &lt;/th&gt;
+          &lt;td&gt;{{ item.price}}&lt;/td&gt;
+          &lt;td&gt;
+            &lt;div class&#x3D;&quot;table-btn&quot;&gt;
+              &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; id&#x3D;&#x27;confirmation-delete-button&#x27; data-toggle&#x3D;&quot;modal&quot;
+                data-target&#x3D;&quot;#delete-model&quot;&gt;
+                Delete
+              &lt;/button&gt;
+              &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; id&#x3D;&#x27;update-button&#x27; (click)&#x3D;&quot;action(item.uuid,&#x27;update&#x27;)&quot;&gt;Edit
+                Product&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/td&gt;
+          &lt;!-- Modal --&gt;
+          &lt;div class&#x3D;&quot;modal fade&quot; id&#x3D;&quot;delete-model&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-labelledby&#x3D;&quot;delete-model-label&quot;
+            aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;div class&#x3D;&quot;modal-dialog&quot; role&#x3D;&quot;document&quot;&gt;
+              &lt;div class&#x3D;&quot;modal-content&quot;&gt;
+                &lt;div class&#x3D;&quot;modal-header&quot;&gt;
+                  &lt;h5 class&#x3D;&quot;modal-title&quot; id&#x3D;&quot;delete-model-label&quot;&gt;Are you sure you want to delete this product?&lt;/h5&gt;
+                  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;modal&quot; aria-label&#x3D;&quot;Close&quot;&gt;
+                  &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+                  &lt;div&gt;&lt;span&gt;{{ item. title}}&lt;/span&gt;&lt;/div&gt;
+                  &lt;div&gt;&lt;span&gt;{{ item. description}}&lt;/span&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;modal-footer&quot;&gt;
+                  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary&quot; id&#x3D;&#x27;close-button&#x27; data-dismiss&#x3D;&quot;modal&quot;&gt;Close&lt;/button&gt;
+                  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; id&#x3D;&#x27;delete-button&#x27; data-dismiss&#x3D;&quot;modal&quot;
+                    (click)&#x3D;&quot;action(item.uuid,&#x27;delete&#x27;)&quot;&gt;Delete&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+  </code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./product-list-view.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.cart-svg {
+    background-color: #ffec5f;
+    border-radius: 15% 15% 15% 15%;
+    width: 100px;
+    height: 100px;
+    padding: 19px;
+    margin-top: 24px;
+  }
+  .font {
+    color: #224257;
+    font-weight: 600;
+  
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+  .div1 {
+    width: 120px;
+    float: left;
+    border: 1px solid #ececec;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  .div2 {
+    width: 120px;
+    float: left;
+    border: 1px solid #ececec;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+  span {
+    display: inline-block;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+  .table-responsive-lg {
+    margin-top: 50px;
+  
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+  
+    .table-section {
+      width: 92%;
+      margin-bottom: 1rem;
+      color: #212529;
+      margin: 20px auto;
+      background: #fff;
+  
+      @media only screen and (max-width: 600px) {
+        width: 600px;
+        overflow: auto;
+      }
+  
+      thead {
+        tr {
+          th {
+            color: #212529;
+            padding: 15px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            font-weight: 600;
+          }
+        }
+      }
+  
+      tbody {
+        tr {
+          td,
+          th {
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+  }
+  .white {
+    background-color: white;
+    padding: 20px;
+  
+    @media only screen and (max-width: 600px) {
+      padding: 0px 20px 20px 20px;
+  
+      .cart-svg {
+        margin: 0 auto;
+      }
+    }
+  }
+  .table-btn &gt; * {
+    margin: 0.25rem !important;
+    float: right;
+  }
+  .pd {
+    padding: 0 2%;
+  }
+  .pd25 {
+    padding: 25px;
+  }
+  
+  .production-summary {
+    @media only screen and (max-width: 600px){
+      position: relative;
+      left: calc(50% - 163px);
+    }
+  }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="errorObj |async" class="alert alert-danger" role="alert">    {{errorObj|async}}  </div>  <div *ngIf="successObj |async" class="alert alert-success" role="alert">    {{successObj|async}}  </div>  <div class="container white">    <div class="row pd">      <div class="col-sm-2">        <div class="cart-svg"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"            version="1.1" viewBox="0 0 512 512" enable-background="new 0 0 512 512" width="50px" height="62px">            <g>              <g>                <polygon                  points="408.5,63.9 387.7,63.9 387.7,95 356.6,95 356.6,115.8 387.7,115.8 387.7,147 408.5,147 408.5,115.8 439.7,115.8     439.7,95 408.5,95   " />                <path                  d="M111,40.2c-1-5.2-5.2-8.3-10.4-8.3H16v20.9h76.2L161,331.1c1,5.2,5.2,8.3,10.4,8.3h268.2v-20.9H178.8L111,40.2z" />                <rect width="237.9" x="171.5" y="371.7" height="20.9" />                <path                  d="m396.9,419.7c-21.9,0-40.7,18.8-40.7,40.7s17.7,40.7 40.7,40.7c23,0 40.7-18.8 40.7-40.7s-18.8-40.7-40.7-40.7zm0,60.4c-10.4,0-19.8-9.4-19.8-19.8 0-10.4 8.3-19.8 19.8-19.8s19.8,9.4 19.8,19.8c0,10.5-9.4,19.8-19.8,19.8z" />                <path                  d="m198.6,419.7c-21.9,0-40.7,18.8-40.7,40.7s17.7,40.7 40.7,40.7c21.9,0 40.7-18.8 40.7-40.7s-18.8-40.7-40.7-40.7zm0,60.4c-10.4,0-19.8-9.4-19.8-19.8 0-10.4 8.3-19.8 19.8-19.8 10.4,0 19.8,9.4 19.8,19.8 0,10.5-9.4,19.8-19.8,19.8z" />                <path                  d="m496,104.8c0-52.1-41.7-93.8-93.9-93.8-52.2,0-93.9,41.7-93.9,93.8 0,0.7 0,1.4 0,2.1h-140.9c-10,0-11.7,9.1-10.4,13.6l44.9,158.5c1.1,4.3 6.3,7.3 10.4,7.3h227.5c5.2,0 9.4-3.1 11.5-8.3 0,0 41.8-148.9 42.5-151.9 0,0 0,0 0,0 1.5-6.9 2.3-14 2.3-21.3zm-315.1,23h130.1c2.9,11.8 8.1,22.8 15,32.3h-136.8l-8.3-32.3zm250.4,137.6h-211.8l-8.3-32.3h229.6l-9.5,32.3zm15.7-53.2h-242l-9-31.3h150.9c15.5,11.2 34.5,17.7 55.2,17.7 20,0 38.4-6.1 53.5-16.6l-8.6,30.2zm-44.9-34.4c-40.7,0-73-32.3-73-73 0-40.7 32.3-73 73-73 40.7,0 73,32.3 73,73 0,40.7-32.3,73-73,73z" />              </g>            </g>          </svg></div>      </div>      <div class="col-sm-7 pd25">        <div class="row">          <div class="col-sm-12">            <h3 class="font"> Product Center</h3>          </div>        </div>        <div class="row">          <div class="col-sm-8 production-summary">            <span class="div1">              <div class="font">{{(productList |async).length}}</div>              <div class="font">Products</div>            </span>            <span class="div2">              <div class="font">{{outOfStockCount}}</div>              <div class="font">Out of stock</div>            </span>            </div>        </div>      </div>    </div>  </div>  <div class="row">  </div>  <div class="table-responsive-lg">      <div *ngIf="(productList |async).length==0" class="alert alert-danger" role="alert">       There is no products available.      </div>    <table *ngIf="(productList |async).length>0" class="table-section">      <thead>        <tr>          <th scope="col">Product</th>          <th scope="col">Price</th>          <th scope="col"></th>        </tr>      </thead>      <tbody>        <tr *ngFor="let item of  (productList |async)">          <th>            <div><span>{{ item. title}}</span></div>            <div><span>{{ item. description}}</span></div>          </th>          <td>{{ item.price}}</td>          <td>            <div class="table-btn">              <button type="button" class="btn btn-danger" id=\'confirmation-delete-button\' data-toggle="modal"                data-target="#delete-model">                Delete              </button>              <button type="button" class="btn btn-success" id=\'update-button\' (click)="action(item.uuid,\'update\')">Edit                Product</button>            </div>          </td>          <!-- Modal -->          <div class="modal fade" id="delete-model" tabindex="-1" role="dialog" aria-labelledby="delete-model-label"            aria-hidden="true">            <div class="modal-dialog" role="document">              <div class="modal-content">                <div class="modal-header">                  <h5 class="modal-title" id="delete-model-label">Are you sure you want to delete this product?</h5>                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">                  </button>                </div>                <div class="modal-body">                  <div><span>{{ item. title}}</span></div>                  <div><span>{{ item. description}}</span></div>                </div>                <div class="modal-footer">                  <button type="button" class="btn btn-secondary" id=\'close-button\' data-dismiss="modal">Close</button>                  <button type="button" class="btn btn-danger" id=\'delete-button\' data-dismiss="modal"                    (click)="action(item.uuid,\'delete\')">Delete</button>                </div>              </div>            </div>          </div>        </tr>      </tbody>    </table>  </div>  </div>'
+    var COMPONENTS = [{'name': 'AddProductComponent', 'selector': 'products-add-product'},{'name': 'AppComponent', 'selector': 'products-root'},{'name': 'FooterComponent', 'selector': 'products-footer'},{'name': 'HeaderComponent', 'selector': 'products-header'},{'name': 'ProductListViewComponent', 'selector': 'products-product-list-view'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ProductListViewComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProductListViewComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
