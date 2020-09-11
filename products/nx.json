@@ -28,6 +28,9 @@
     "product-e2e": {
       "tags": [],
       "implicitDependencies": ["product"]
+    },
+    "shared-product-list": {
+      "tags": ["shared","feature"]
     }
   }
 }
