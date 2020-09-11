@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'products-header',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  @Input() activeUrl: string;
+  menuItems: Array<string>;
+  uuid: string;
+  constructor(private router: Router, private route: ActivatedRoute) {
+    this.activeUrl = 'home';
+    this.menuItems = ['home', 'add Product']
+  }
 
   ngOnInit(): void {
   }
-
+  navigateUrl(url) {
+    this.activeUrl = url;
+    url = url === 'home' ? url :  'addProduct/add'
+    this.router.navigate([url]);
+  }
 }

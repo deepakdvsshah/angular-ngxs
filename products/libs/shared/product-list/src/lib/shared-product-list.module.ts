@@ -8,7 +8,7 @@ import { ProductListViewComponent } from './product-list-view/product-list-view.
     CommonModule,
 
     RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
+       {path: '', pathMatch: 'full', component: ProductListViewComponent} 
     ]),
   ],
   declarations: [ProductListViewComponent],

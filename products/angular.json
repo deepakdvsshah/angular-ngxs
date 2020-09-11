@@ -25,8 +25,12 @@
               "apps/product/src/favicon.ico",
               "apps/product/src/assets"
             ],
-            "styles": ["apps/product/src/styles.scss"],
-            "scripts": []
+            "styles": ["apps/product/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"],
+              "scripts": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              ]
           },
           "configurations": {
             "production": {

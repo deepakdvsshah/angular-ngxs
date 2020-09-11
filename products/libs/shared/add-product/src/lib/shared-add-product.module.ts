@@ -8,7 +8,7 @@ import { AddProductComponent } from './add-product/add-product.component';
     CommonModule,
 
     RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
+       {path: '', pathMatch: 'full', component: AddProductComponent}
     ]),
   ],
   declarations: [AddProductComponent],
